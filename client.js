@@ -1,7 +1,7 @@
 function hasUserMedia(){
  navigator.getUserMedia = navigator.getUserMedia ||
 navigator.webkitGetUserMedia
- || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+ || navigator.mediaDevices.getUserMedia || navigator.msGetUserMedia;
  return !!navigator.getUserMedia;
 }
 if (hasUserMedia()) {
