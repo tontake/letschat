@@ -13,8 +13,8 @@ navigator.msGetUserMedia;
 	 
 	 var video = document.querySelector('video');
  //insert stream into the video tag
-// video.src = window.URL.createObjectURL(stream);
- video.srcObject = stream;
+ video.src = window.URL.createObjectURL(stream);
+// video.srcObject = stream;
  }, function (err) {});
 } else {
  alert("Error. WebRTC is not supported!");
